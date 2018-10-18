@@ -1,0 +1,108 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg{
+  max-width: 100%;
+  opacity: .65;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-1{
+  background-image: url(../images/bg-1.jpg);
+  min-height: 100%;
+  &-title{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    span{
+      padding: 1rem 2rem;
+      font-size: 2rem;
+      letter-spacing: 0.4rem;
+      background-color: black;
+      color: white;
+    }
+  }
+}
+.bg-2{
+  background-image: url(../images/bg-2.jpg);
+  min-height: 50%;
+  &-title{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    span{
+      padding: 1rem 2rem;
+      font-size: 2rem;
+      letter-spacing: 0.4rem;;
+      color: white;
+    }
+  }
+}
+.bg-3{
+  background-image: url(../images/bg-3.jpg);
+  min-height: 50%;
+  &-title{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    span{
+      padding: 1rem 2rem;
+      font-size: 2rem;
+      letter-spacing: 0.4rem;;
+      color: black;
+    }
+  }
+}
+.bg-4{
+  background-image: url(../images/bg-4.jpg);
+  min-height: 100%;
+  &-title{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    span{
+      padding: 1rem 2rem;
+      font-size: 2rem;
+      letter-spacing: 0.4rem;
+      background-color: black;
+      color: white;
+    }
+  }
+}
+.content{
+  h2{
+    text-align: center;
+    letter-spacing: 0.25rem;
+    font-size: 1.75rem;
+  }
+  opacity: 0;
+  position: relative;
+  color: black;
+  text-align: justify;
+  padding: 3rem 5rem;
+  font-size: 1.1rem;
+}
+
+.popup-enter{
+  animation: popup .5s ease-in both;
+}
+
+@keyframes popup {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
